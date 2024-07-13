@@ -1,0 +1,11 @@
+body{
+    min-width: 100vw;
+  
+  }
+  .buttonContain{
+  
+    min-width: 100vw;
+    display:grid;  
+    justify-content: center;
+  
+  }
