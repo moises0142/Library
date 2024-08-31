@@ -12,19 +12,32 @@ function Book(title,author,pages,read){
 let book20 = new Book("ti", "au", "100", "read");
 let book30 = new Book("ble", "blo", "29", "ye");
 
-addBookToLibrary();
+let displayContainer = document.querySelector(".booksContainer");
+let addButton = document.querySelector(".addButton");
+let dialog = document.querySelector("dialog");
+let exit = document.querySelector(".x");
+
+addButton.addEventListener("click" , addBookToLibrary);
 
 function addBookToLibrary(){
-  myLibrary.push(book20,book30);
-
+wadw    dialog.showModal();
 }
 
-let displayContainer = document.querySelector(".booksContainer");
-displayBooks();
+exit.addEventListener("click", ()=>{
+    dialog.close();
+});
 
-function displayBooks(){
+window.onload = function (){
+    myLibrary.push(book20,book30);
+    displayBooks();
+}
+
+
+
+function displayBooks(){    
     
     myLibrary.forEach((el) =>{
+
         let displayBox = document.createElement("div");
         displayBox.className = "displayBox"
 
