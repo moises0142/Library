@@ -10,17 +10,32 @@
   </head>
   <body>
     <div class="buttonContain">
-      <button class="addButton" >Add New Book</button>
+      <button class="addNewBookButton" >Add New Book</button>
     </div>
     <div class="booksContainer">
     </div>
+    <div>yomamam aint no way boy</div>
     <dialog>
         <button class="x">X</button>
-        <div>Title:</div>
-        <div>Author:</div>
-        <div>Pages</div>
-        <div>Read</div>
-        <button class="addButton" >Add Book</button>
+        <form id="bookForm" action="" method="get" class="form">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text"id="name">
+          </div>
+          <div>
+            <label for="author">Author:</label>
+            <input type="text" id="author">
+          </div>
+          <div>
+            <label for="pages">Pages:</label>
+            <input type="number" id="pages">
+          </div>
+          <div>
+            <label for="read">Read</label>
+            <input type="checkbox" id="read">
+          </div>
+        </form>
+        <button class="addBookToLibraryButton" type="submit" form="bookForm" >Add Book</button>
     </dialog>
   </body>
 

@@ -1,5 +1,7 @@
 body{
-    min-width: 100vw;
+  background-color: black;
+  min-width: 100vw;
+  color: white;
   
   }
   .buttonContain{
@@ -8,4 +10,19 @@ body{
     display:grid;  
     justify-content: center;
   
+  }
+  .dialog{
+    padding: 0 ;
+    width: 250px;
+    display:grid;
+  }
+
+  .x{
+    margin: 5px;
+    margin-bottom: 15px;
+    justify-self: start;
+  }
+
+  .displayBox{
+    border: 2px solid gold;
   }
