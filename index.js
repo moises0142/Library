@@ -1,14 +1,3 @@
-const myLibrary = [];
-
-function Book(title,author,pages,read){
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-    this.info =function(){
-        return "The "+this.title+" by "+this.author+", "+this.pages+", "+this.read;
-    }
-}
 let book20 = new Book("ti", "au", "100", "read");
 let book30 = new Book("ble", "blo", "29", "ye");
 
@@ -25,6 +14,20 @@ addNewBookButton.addEventListener("click" , addBookButton);
 addBookToLibraryButton.addEventListener('click', addBookLibraryButton);
 isRead.addEventListener('click',readOrReadent)
 let reada=0;
+
+
+const myLibrary = [];
+
+function Book(title,author,pages,read){
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+    this.info =function(){
+        return "The "+this.title+" by "+this.author+", "+this.pages+", "+this.read;
+    }
+}
+
 function readOrReadent(){
     if(reada<1){
         reada=+1;
@@ -108,6 +111,7 @@ function displayBooks(last){
     }
     else{
         let displayContainer = document.querySelector(".booksContainer");
+        
         
         let displayBox = document.createElement("div");
         displayBox.className = "displayBox"
